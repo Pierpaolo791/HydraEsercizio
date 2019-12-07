@@ -8,7 +8,7 @@ public class EroiFactory {
         return new Guerriero(scenario, nome);
     }
     
-    public static Guaritore getGuaritore() {
-        return new Guaritore();
+    public static Guaritore getGuaritore(ScenarioHydra scenario) {
+        return new Guaritore(scenario);
     }
 }

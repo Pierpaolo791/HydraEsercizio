@@ -24,4 +24,5 @@ public class Testa {
         this.alive = alive;
     }
     
+    
 }

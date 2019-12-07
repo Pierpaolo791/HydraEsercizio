@@ -1,6 +1,8 @@
 package hydra.thread.eroi;
 
 import hydra.hydra.ScenarioHydra;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Guerriero implements Eroe{
     
@@ -12,13 +14,24 @@ public class Guerriero implements Eroe{
     }
     @Override
     public void run() {
-        
-        System.out.println (" Il guerriero "+ nome +" prova ad attaccare l'Hydra...");
-        scenario.executeAttacco(this);
+        boolean stateHydra = true; 
+        while(stateHydra) {
+            
+            stateHydra = scenario.executeAttacco(this);
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException ex) {
+               
+            }
+        }
+        System.out.println("Mi vado a prendere un birra...");
         
     }
     
     public Spada afferraSpada() {
         return FactorySpada.getRandomSpada();
+    }
+    public String getNome() {
+        return nome;
     }
 }
