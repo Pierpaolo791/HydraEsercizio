@@ -11,6 +11,7 @@ public class StartApplication {
     private static void testSuite() {
         MyTest tests = new MyTest(); 
         tests.test01();
+        tests.test02();
     }
     
 }
