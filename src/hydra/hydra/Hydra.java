@@ -3,6 +3,7 @@ package hydra.hydra;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class Hydra {
     
@@ -33,5 +34,11 @@ public class Hydra {
            new Testa(),
            new Testa()
         );
+    }
+    public Optional<Testa> getFirstTestaIsAlive() {
+        return teste
+                .stream()
+                .filter( x-> x.isAlive() )
+                .findFirst();
     }
 }

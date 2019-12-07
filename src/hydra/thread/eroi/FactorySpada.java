@@ -1,4 +1,4 @@
-package hydra.hydra;
+package hydra.thread.eroi;
 
 import hydra.thread.eroi.Spada;
 import java.util.Random;

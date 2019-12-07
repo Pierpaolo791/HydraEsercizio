@@ -1,5 +1,6 @@
 package hydra.hydra;
 
+import hydra.thread.eroi.FactorySpada;
 import hydra.thread.eroi.Spada;  
 public class Testa {
     
