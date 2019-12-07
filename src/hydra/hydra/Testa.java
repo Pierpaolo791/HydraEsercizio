@@ -1,7 +1,6 @@
 package hydra.hydra;
 
-import hydra.thread.eroi.Spada;
-
+import hydra.thread.eroi.Spada;  
 public class Testa {
     
     private final Spada vulnerable;
