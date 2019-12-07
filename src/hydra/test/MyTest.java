@@ -1,6 +1,7 @@
 package hydra.test;
 
 import hydra.hydra.Hydra;
+import hydra.hydra.Testa;
 import hydra.thread.eroi.EroiFactory;
 
 public class MyTest {
